@@ -1,15 +1,14 @@
 import {Route, Routes} from "react-router-dom";
 import {MainLayout} from "./layouts/MainLayout";
 import {
-    AboutPage,
+    //AboutPage,
     GenrePage,
     HomePage,
     MovieDetailsPage,
-    MovieGenrePage,
-    PopularMoviePAge, SearchedMoviePage
+    MovieGenrePage, SearchedMoviePage,
+    //PopularMoviePAge, SearchedMoviePage
 } from "./pages";
 import React from "react";
-import LoginPage from "./pages/LoginPage";
 
 
 
@@ -23,9 +22,9 @@ function App() {
                     <Route path={'genres'} element={<GenrePage/>}/>
                     <Route path={'genre/:genre_id/:genre_name'} element={<MovieGenrePage/>}/>
                     <Route path={'/movie/:movie_id'} element={<MovieDetailsPage/>}/>
-                    <Route path={'popular'} element={<PopularMoviePAge/>}/>
+                    {/*//<Route path={'popular'} element={<PopularMoviePAge/>}/>*/}
                     <Route path={'search'} element={<SearchedMoviePage/>}/>
-                    <Route path={'about'} element={<AboutPage/>}/>
+                    {/*<Route path={'about'} element={<AboutPage/>}/>*/}
                     {/*<Route path={'login'} element={<LoginPage/>}/>*/}
                 </Route>
             </Routes>
