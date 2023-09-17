@@ -1,12 +1,10 @@
 import {Route, Routes} from "react-router-dom";
 import {MainLayout} from "./layouts/MainLayout";
 import {
-    //AboutPage,
     GenrePage,
     HomePage,
     MovieDetailsPage,
     MovieGenrePage, SearchedMoviePage,
-    //PopularMoviePAge, SearchedMoviePage
 } from "./pages";
 import React from "react";
 
