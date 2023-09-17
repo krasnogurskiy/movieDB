@@ -34,36 +34,30 @@ const Header = () => {
                     <Link to={'/'}>kapik<sup>HUB</sup></Link>
 
                 </div>
-                <div className={css.Categories}>
+                <div className={css.moves}>
                     <NavLink to={""}>home</NavLink>
-                    {/*<NavLink to={"popular"}>top rated</NavLink>*/}
-                    <div>
-
-                        <NavLink to={"genres"}>genres</NavLink>
-                    </div>
-                    {/*<NavLink to={"about"}>about</NavLink>*/}
-                </div>
-                <div className={css.Search}>
-                    <div className={css.submit}>
-                        <form action="">
-                            <input type="text" placeholder={"search"} ref={search} required={true}/>
-                            <button onClick={() => {
-                                localStorage.setItem('keywords', search.current.value);
-                                navigate('/search');
-                            }
-                            }>search
-                            </button>
-                        </form>
+                    <NavLink to={"genres"}>genres</NavLink>
+                    <div className={css.Search}>
+                        <div className={css.submit}>
+                            <form action="">
+                                <input type="text" placeholder={"search"} ref={search} required={true}/>
+                                <button onClick={() => {
+                                    localStorage.setItem('keywords', search.current.value);
+                                    navigate('/search');
+                                }
+                                }>search
+                                </button>
+                            </form>
+                        </div>
                     </div>
                     <div className={css.button_div}>
-                        <button onClick={handleDarkThemeClick}><i className="fa-solid fa-moon"></i></button>
-                        <button onClick={handleLightThemeClick}><i className="fa-solid fa-sun"></i></button>
+                        <button onClick={handleDarkThemeClick} className={css.light}><i ></i></button>
+                        <button onClick={handleLightThemeClick} className={css.dark}><i ></i></button>
+                    </div>
+                    <div className={css.user_login}>
+                        <UserInfo/>
                     </div>
                 </div>
-                <div className={css.user_login}>
-                    <UserInfo/>
-                </div>
-
             </div>
         </div>
     );

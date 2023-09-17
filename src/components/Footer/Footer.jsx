@@ -9,30 +9,20 @@ const Footer = () => {
             <div className={css.info}>
                 <div className={css.numbers}>
                     Contacts:
-                    <div>(577) 946-8529</div>
-                    <div>filmX@gmail.com</div>
+                    <div>097-721-12-77</div>
+                    <div>kao@gmail.com</div>
                 </div>
-                <div className={css.social_medias}>Social medias:
-                    <div className={css.icons}>
-                        <div className={css.facebook}>
-                            <a href="https://www.facebook.com/"><i className="fa-brands fa-facebook"></i> </a>
+               
+                <div className={css.social}>
+                    <div className={css.facebook}>
+                        <a href="https://www.facebook.com/"> Facebook </a>
 
-                        </div>
-                        <div className={css.instagram}>
-                            <a href="https://www.instagram.com/"><i className="fa-brands fa-instagram"></i></a>
-
-                        </div>
-                        <div className={css.telegram}>
-                            <a href="https://web.telegram.org/k/"><i className="fa-brands fa-telegram"></i></a>
-
-
-                        </div>
-                        <div className={css.twitter}>
-                            <a href="https://twitter.com/home"><i className="fa-brands fa-twitter"></i></a>
-
-
-                        </div>
                     </div>
+                    <div className={css.instagram}>
+                        <a href="https://www.instagram.com/">Instagram</a>
+
+                    </div>
+                        
                 </div>
             </div>
         </footer>

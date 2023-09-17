@@ -10,12 +10,8 @@ const Pagination = ({  }) => {
     return (
         <div>
             <div style={{width: "100vw"}}>
-                {/*<Link to={`next_page`}>*/}
                 <button onClick={() => dispatch(movieActions.setCurrentPage(currentPage - 1 ))}>prev</button>
-                {/*</Link>*/}
-                {/*<Link to={`next_page`}>*/}
                 <button onClick={() => dispatch(movieActions.setCurrentPage(currentPage + 1 ))}>next</button>
-                {/*</Link>*/}
             </div>
         </div>
     );

@@ -1,14 +1,11 @@
 import {createAsyncThunk, createSlice, current} from "@reduxjs/toolkit";
 import {movieService} from "../../services/MovieService";
-// import {movieService} from "../../services/movieService";
-
 
 const initialState = {
     movies: [],
     currentPage: 1,
     loading: null,
 };
-
 
 const getMovies = createAsyncThunk(
     'movieSlice/getAll',
@@ -34,8 +31,6 @@ const getPopularMovies = createAsyncThunk(
         }
     }
 );
-
-
 
 const movieSlice = createSlice({
     name: 'movieSlice',

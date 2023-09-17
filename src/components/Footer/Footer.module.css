@@ -29,7 +29,7 @@
     row-gap: 5px;
     color: cornflowerblue;
 }
-.icons{
+.social{
     display: flex;
     column-gap: 15px;
     margin-top: 20px;
@@ -44,10 +44,4 @@ a:visited{
 }
 .instagram i:hover{
     color: hotpink;
-}
-.telegram i:hover{
-    color: deepskyblue;
-}
-.twitter i:hover{
-    color: lightskyblue;
 }

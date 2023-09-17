@@ -86,3 +86,14 @@
     width: 100%;
     border-radius: 10px;
 }
+
+html[data-theme='dark'] a{
+    color: #C4D0E8;
+}
+
+html[data-theme='dark'] p{
+    color: #C4D0E8;
+}
+html[data-theme='dark'] div{
+    color: #C4D0E8;
+}

@@ -1,4 +1,3 @@
-// import {apiService} from "./apiService";
 import {urls} from "../config";
 import {apiService} from "./ApiService";
 
